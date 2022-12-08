@@ -5,4 +5,5 @@ uvicorn
 python-decouple
 python-multipart
 pydantic
+pydantic[email]
 fpdf2
