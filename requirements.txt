@@ -1,7 +1,6 @@
 # API
 fastapi
 fastapi-utils
-fastapi-mail
 uvicorn
 python-decouple
 python-multipart
