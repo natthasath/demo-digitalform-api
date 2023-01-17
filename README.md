@@ -1,6 +1,6 @@
 # 🎉 DEMO DigitalForm API
 
-FastAPI framework, high performance, easy to learn, fast to code, ready for production
+A digital form is an electronic document used to collect and store information. It can be filled out and submitted online, making it a convenient and efficient way to gather data.
 
 ![version](https://img.shields.io/badge/version-1.0-blue)
 ![rating](https://img.shields.io/badge/rating-★★★★★-yellow)
