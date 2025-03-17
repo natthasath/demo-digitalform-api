@@ -9,10 +9,12 @@ router = APIRouter(
     responses={404: {"message": "Not found"}}
 )
 
+document_service = DocumentService()
+
 @router.post("/pdf")
 async def pdf_generate(data: I_SectionSchema = Depends(I_SectionSchema), params: II_SectionSchema = Depends(II_SectionSchema)):
-    return DocumentService().pdf_generate(data.name, data.surname, data.position, data.department, data.phone, data.email, params.usage, params.account, params.start_date, params.end_date)
+    return document_service.pdf_generate(data.name, data.surname, data.position, data.department, data.phone, data.email, params.usage, params.account, params.start_date, params.end_date)
 
 @router.post("/date")
 async def pdf_generate():
-    return DocumentService().generate_id()
+    return document_service.generate_id()
